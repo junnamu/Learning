@@ -1,3 +1,23 @@
+// 아래 코드가 같은 범위
+// until 이 마지막 값 빼고 여서 범위에서 -1 느낌
+// until 양 옆에 띄어쓰기 필요 기억
+
+for (i in 0 until list.size) 
+
+for (i in 0..list.size-1) 
+
+
+// list.indices 로 list의 인덱스값 카운트?
+for (i in list.indices)
+
+
+
+
+
+
+
+
+
 // 저장된 리스트에서 0을 포함해 짝수 index (0, 2, 4...) 값을 모두 출력 3가지 표현
 
 val list1 = listOf ("a", "b", "c", "d")
