@@ -19,6 +19,5 @@ fun reverseWord(input: String): String {
     return reverse
 }
 
-println(reverseWord("hi"))
-
-println(reverseWord("easy"))
+println(reverseWord("hi"))   // ih
+println(reverseWord("easy"))  // ysae
