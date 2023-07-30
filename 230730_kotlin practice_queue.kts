@@ -34,7 +34,7 @@ println(mixAlphabet(3))
 println(mixAlphabet(25))
 println(mixAlphabet(26)) //queue 요소가 이제 없어서 출력x
 
-// queue 메서드 개념정리
+// queue 메서드 개념정리 (선입선출)
 //queue.peek : 큐 맨앞요소 제거하지 않고 반환 (조회만) 
 //queue.poll : 큐 맨앞요소 제거 후 반환
 //queue.peekLast : 큐 맨뒤요소 제거하지 않고 반환 (조회만)
