@@ -1,0 +1,23 @@
+//추억의 3 6 9 박수
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+
+for (int i = 1; i <= 100; i++) {
+    if (i % 10 == 3 || i % 10 == 6 || i % 10 == 9) {
+        System.out.println("clap");
+    } else if (i / 10 == 3 || i / 10 == 6 || i / 10 == 9) {
+        System.out.println("clap");
+    } else {
+        System.out.println(i);
+    }
+}
+
+// if문은 일의 자리 숫자 3,6,9
+// 10으로 나눈 나머지(%) 값이 3,6,9
+
+// else if문은 십의 자리 숫자 3,6,9
+// 10으로 나눈 몫(/) 값이 3,6,9
+
+// else문은 그 외 나머지 숫자가 그대로 출력
