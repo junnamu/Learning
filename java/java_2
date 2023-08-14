@@ -1,0 +1,43 @@
+// 추억의 java 연습
+
+//1. while_1 0~99 오름차순
+    int i = 1;
+    while (i <= 99) {
+        System.out.println(i);
+        ++i;
+    }
+//2. while_2 1~100 내림차순
+        int j = 100;
+    while (j >= 1) {
+        System.out.println(j);
+        --j;
+    }
+//1. for_1 0~99 오름차순
+for(int k = 1; k <= 99; ++k) {
+        System.out.println(k);
+    }
+//2. for_2 1~100 내림차순
+for(int l = 100; l >= 1; --l) {
+        System.out.println(l);
+    }
+//후위 증가 감소 ver.
+//1. while_1 0~99 오름차순
+    int i = 0;
+    while (i <= 99) {
+        System.out.println(i);
+        i++;
+    }
+//2. while_2 1~100 내림차순
+        int j = 100;
+    while (j >= 1) {
+        System.out.println(j);
+        j--;
+    }
+//1. for_1 0~99 오름차순
+for(int k = 1; k <= 99; k++) {
+        System.out.println(k);
+    }
+//2. for_2 1~100 내림차순
+for(int l = 100; l >= 1; l--) {
+        System.out.println(l);
+    }
