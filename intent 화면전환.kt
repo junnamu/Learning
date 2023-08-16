@@ -6,7 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
@@ -24,7 +24,6 @@ class MainActivity : ComponentActivity() {
             Nav_testTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
                     ButtonToSecondActivity()
@@ -38,27 +37,36 @@ class MainActivity : ComponentActivity() {
 fun ButtonToSecondActivity() {
     val context = LocalContext.current
     val intent = Intent(context, SecondActivity::class.java)
+    Column {
+        Text(text = "메인화면")
 
-    Button(
-        onClick = {
-            context.startActivity(intent)
-        },
-        modifier = Modifier.fillMaxWidth()
-    ) {
-        Text("Go to Second Activity")
+        Button(
+            onClick = {
+                context.startActivity(intent)
+            }, modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("두번째 화면 이동")
+        }
     }
 }
+
 
 -------------------------------------------
 // SecondActivity
 
 package com.example.nav_test
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 
 
 class SecondActivity : ComponentActivity() {
@@ -77,7 +85,17 @@ fun SecondScreenContent() {
 
 @Composable
 fun View() {
-    Text(text = "hi")
+    val context = LocalContext.current
+    val intent = Intent(context, MainActivity::class.java)
+    Column {
+        Text(text = "두번째 화면")
+
+        Button(
+            onClick = {
+                context.startActivity(intent)
+            }, modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("메인화면 이동")
+        }
+    }
 }
-
-
