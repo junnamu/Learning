@@ -1,0 +1,56 @@
+// 1. class person
+
+class Person {
+    String name;
+    String job;
+    int age;
+    String gender;
+    String marriage;
+
+public Person() {
+        name = "Na_java";
+        job = "teacher";
+        age = 28;
+        gender = "male";
+        marriage = "X";
+    }
+ }
+
+class Main {
+    public static void main(String[] args) {
+        Person person1 = new Person();
+        System.out.println(person1.name);
+        System.out.println(person1.job);
+        System.out.println(person1.age);
+        System.out.println(person1.gender);
+        System.out.println(person1.marriage);
+    }
+}
+
+//2. Student
+//필드 선언
+ class Student {
+    String name;
+    int age;
+    String schoolName;
+    int mathGrade;
+
+//생성자 선언
+    public Student() {
+        name = "Na_Hakseang";
+        age = 18;
+        schoolName = "Seoul_Highschool";
+        mathGrade = 85;
+    }
+ }
+
+//생성자 호출
+class Main {
+    public static void main(String[] args) {
+        Student student1 = new Student();
+        System.out.println(student1.name);
+        System.out.println(student1.age);
+        System.out.println(student1.schoolName);
+        System.out.println(student1.mathGrade);
+    }
+}
