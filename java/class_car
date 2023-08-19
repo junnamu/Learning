@@ -1,0 +1,31 @@
+class Car {
+    String model;
+    String color;
+    int speed;
+    int gas;
+    
+    Car(String model, String color, int speed, int gas) {
+        this.model = model;
+        this.color = color;
+        this.speed = speed;
+        this.gas = gas;
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Car[] cars = new Car[2];
+        Car car1 = new Car("SPARK", "blue", 145, 32);
+        Car car2 = new Car("TESLA", "red", 150, 40);
+        
+        cars[0] = car1;
+        cars[1] = car2;
+        
+        for (Car car : cars) {
+            System.out.println(car.model);
+            System.out.println(car.color);
+            System.out.println(car.speed);
+            System.out.println(car.gas);
+        }
+    }
+}
