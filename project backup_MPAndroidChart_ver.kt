@@ -1,5 +1,7 @@
 //project backup_MPAndroidChart_ver.kt
 //MPAndroidChart에서 컴포즈 그리기 그래프로 변경 예정
+// 일부 코드 사라졌다 집에서 코드 다시 백업 필요
+
 
 
 package com.example.comp_nav_test
